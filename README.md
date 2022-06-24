@@ -3,6 +3,8 @@ A repository containing tools used for unpacking and deobfuscating .NET applicat
 
 ### WARNING: These tools have been aggragated from multiple sources around the web. These tools are provided as-is, and there is no guarantee on the safety or authenticity of the file(s). It is recommended to run them in a sandboxed environment. 
 
+### IMPORTANT: A lot of the tools contained are part of CodeCracker's Tools. These tools are from 2011-2015, and are no longer maintained, nor is there much documentation about them. Once again, I want to reiterate that this repository is "as-is" and I cannot guarantee the safety or authenticity of the files provided. As such, without proper documentation on these files, I cannot say for sure what they do. All the information provided is from sources that are available today. Please DO NOT create issues regarding a program not working, as I am not the original author of any of the tools included here. Thanks!
+
 ## What is this?
 This repository contains tools used in the unpacking and deobfuscation of .NET applications protected with ConfuserEx. I was analyzing a malware artifact protected by ConfuserEx, and most tutorials online referenced tools such as "UnconfuserEx" and "ConfuseExSwitchKiller", but links were dead / not readily available. I've created this repository to act as a centralized place for all tools related to the deobfuscation of ConfuserEx protected applications, without the worry of expiring or paywalled file downloads. Furthermore, a lot of tools, such as NoFuserEx, require you to build from source, so this repository has pre-compiled binaries for ease of use. 
 
@@ -29,7 +31,6 @@ Here are some other tools that might be helpful. They could also entirely replac
 * https://github.com/BedTheGod/ConfuserEx-Unpacker-Mod-by-Bed/tree/1.1 - An all-in-one ConfuserEx unpacker and deobfuscator with mod support
 
 ## Tools contained:
-A lot of the tools contained are part of CodeCracker's Tools. These tools are from 2011-2015, and are no longer maintained, nor is there much documentation about them. Once again, I want to reiterate that this repository is "as-is" and I cannot guarantee the safety or authenticity of the files provided. As such, without proper documentation on these files, I cannot say for sure what they do. All the information provided is from sources that are available today. 
 * UnconfuserEx - Unpacks ConfuserEx protected applications
 * [NoFuserEx](https://github.com/CodeShark-Dev/NoFuserEx) - Removes anti-tamper, anti-debugger, anti-dump, fixes proxy calls and constants (built from src)
 * ConfuserEx ProxyCallFixer v2 - Fixes proxy function calls
