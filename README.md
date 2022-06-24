@@ -25,8 +25,8 @@ This is the recommended order of tools, but other tools are available at your di
 
 ## Other possibly helpful tools
 Here are some other tools that might be helpful. They could also entirely replace the tools in this list. I need to test more with them.
-* https://github.com/ViRb3/de4dot-cex
-* https://github.com/BedTheGod/ConfuserEx-Unpacker-Mod-by-Bed/tree/1.1
+* https://github.com/ViRb3/de4dot-cex - de4dot with ConfuserEx support
+* https://github.com/BedTheGod/ConfuserEx-Unpacker-Mod-by-Bed/tree/1.1 - An all-in-one ConfuserEx unpacker and deobfuscator with mod support
 
 ## Tools contained:
 A lot of the tools contained are part of CodeCracker's Tools. These tools are from 2011-2015, and are no longer maintained, nor is there much documentation about them. Once again, I want to reiterate that this repository is "as-is" and I cannot guarantee the safety or authenticity of the files provided. As such, without proper documentation on these files, I cannot say for sure what they do. All the information provided is from sources that are available today. 
@@ -37,14 +37,14 @@ A lot of the tools contained are part of CodeCracker's Tools. These tools are fr
 * ConfuserExceptionsRestore.exe - Fixes any errors
 * ConfuserExCfgKiller.exe - Fixes any errors
 * ConfuserExCallFixer.exe - Same as ProxyCallFixer
-* ConfuserExDupPopPatcher.exe - 
+* ConfuserExDupPopPatcher.exe - (?)
 * ConfuserExExpressionKiller.exe - Fixes control flow (Doesn't work on newer versions)
 * ConfuserExFixer.exe - Fixes errors
-* ConfuserExMethodsDecryptor.exe - 
+* ConfuserExMethodsDecryptor.exe - (?)
 * ConfuseExSwitchKiller.exe - Fixes switch control flow
 * ConfuserCleanUp.exe - Cleans up file
-* ConfuserDelegateKiller.exe - 
-* ConfuserExPredicateKiller.exe - 
-* ConfuserLdcPopPatcher.exe - 
-* ConfuserStringDecryptor.exe - (?) Older version of ConstantsDecryptor
-* ConfuserXorCalc.exe - 
+* ConfuserDelegateKiller.exe - (?)
+* ConfuserExPredicateKiller.exe - (?)
+* ConfuserLdcPopPatcher.exe - (?)
+* ConfuserStringDecryptor.exe - Older version of ConstantsDecryptor(?)
+* ConfuserXorCalc.exe - Resolves XOR calculations(?)
