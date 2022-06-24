@@ -1,7 +1,7 @@
 # UnconfuserExTools
 A repository containing tools used for unpacking and deobfuscating .NET applications protected with ConfuserEx
 
-### WARNING: These tools have been aggragated from multiple sources around the web. These tools are provided as-is, and there is no guarantee on the safety or authenticity of the file(s). It is recommended to run them in a sandboxed environment. 
+### WARNING: These tools have been aggragated from multiple sources around the web. These tools are provided as-is, and there is no guarantee on the safety or authenticity of the file(s). It is recommended to run them in a sandboxed environment. I have tried my best to aggregate the same tools from multiple sources and to compare file-size to ensure there is no signs of obvious tampering.
 
 ### IMPORTANT: A lot of the tools contained are part of CodeCracker's Tools. These tools are from 2011-2015, and are no longer maintained, nor is there much documentation about them. Once again, I want to reiterate that this repository is "as-is" and I cannot guarantee the safety or authenticity of the files provided. As such, without proper documentation on these files, I cannot say for sure what they do. All the information provided is from sources that are available today. Please DO NOT create issues regarding a program not working, as I am not the original author of any of the tools included here. Thanks!
 
