@@ -15,14 +15,18 @@ This repository contains tools used in the unpacking and deobfuscation of .NET a
 2. ConfuserExFixer
 3. ConfuserExConstant
 --
+
 1. Unconfuser.Exe
 2. ConfuserEx Proxy Call Fixer v2
 3. ConfuseExConstantsDecryptor
 4. ConfuseExSwitchKiller
 5. ConfuseExFixer
 --
+
 1. NoFuserEx.exe
 --
+
+
 This is the recommended order of tools, but other tools are available at your disposal. 
 1. Download files via `git clone` or through the latest release.
 2. Run `UnconfuserEx.exe` - This unpacks the application.
