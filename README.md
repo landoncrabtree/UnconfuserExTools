@@ -15,15 +15,15 @@ This repository contains tools used in the unpacking and deobfuscation of .NET a
 6. Run `ConfuseExFixer.exe`
 7. Run `ConfuseExSwitchKiller.exe` (might crash)
 8. If SwitchKiller crashes, you can try `Proxy Call Fix v2`
-8. Clean up with `de4dot`
-9. Open the executable in `dnSpy`
+8. Clean up with [de4dot](https://github.com/de4dot/de4dot)
+9. Open the executable in [dnSpy](https://github.com/dnSpy/dnSpy), [Ghidra](https://github.com/NationalSecurityAgency/ghidra), etc.
 
 ## Sources
-https://youtu.be/X0F_-sE-6GU
-https://github.com/CodeShark-Dev/NoFuserEx
+* https://youtu.be/X0F_-sE-6GU
+* https://github.com/CodeShark-Dev/NoFuserEx
 
 ## Other possibly helpful tools
 Here are some other tools that might be helpful. They could also entirely replace the tools in this list. I need to test more with them.
-https://github.com/ViRb3/de4dot-cex
-https://github.com/BedTheGod/ConfuserEx-Unpacker-Mod-by-Bed/tree/1.1
+* https://github.com/ViRb3/de4dot-cex
+* https://github.com/BedTheGod/ConfuserEx-Unpacker-Mod-by-Bed/tree/1.1
 
