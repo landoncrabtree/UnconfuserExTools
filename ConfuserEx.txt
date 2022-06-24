@@ -1,0 +1,81 @@
+The target - ConfuserEx protected unpackme:
+https://forum.tuts4you.com/topic/35539-unpackme-confuserex-new/
+ConfuserEx is open source: https://github.com/yck1509/ConfuserEx
+ResourceManager,ByteArrayInitializer:
+https://forum.tuts4you.com/topic/33363-editorsremake-some-bugs-fixed
+A nice tutorial about array initializers:
+http://community.bartdesmet.net/blogs/bart/archive/2008/08/21/how-c-array-initializers-work.aspx
+
+For ConfuserEx we should start analyzes from module constructor:
+<Module>.cctor
+- from there all protection are called!
+1. First method called is the AntiTamper protection:
+this decrypt methods!
+Take a look at:
+C:\ConfuserEx-master\Confuser.Runtime\AntiTamper.Normal.cs
+ConfuserExMethodsDecryptor will handle this protection.
+After that we simply nop that call from <Module>.cctor!
+2. Second method called contains something like this:
+        case 0x1f:
+            assembly_0 = Assembly.Load(smethod_29(buffer));
+            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(<Module>.smethod_37);
+this is the Resource protection,
+take a look at C:\ConfuserEx-master\Confuser.Runtime\Resource.cs
+So you must dump the assembly which contains resources
+and add them to assembly using ResourceManager
+3. Third method called contains something like this:
+byte_0 = smethod_29(buffer);
+so it bassically calls other method which returns
+a byte array and has as parameter a byte array!
+byte_0 is defined as:
+internal static byte[] byte_0;
+This is the constant protection, take a look at:
+C:\ConfuserEx-master\Confuser.Runtime\Constant.cs
+This also include the string decryption!
+4. Fourth method called include:
+Marshal.GetHINSTANCE(module_0);
+if (smethod_26(smethod_25(module), 0) != '<')
+...
+and also a lot of VirtualProtect api call!
+This is the antidump protection, take a look at:
+C:\ConfuserEx-master\Confuser.Runtime\AntiDump.cs
+5. Fifth method called (the last one) contains
+an parameterized thread:
+thread = smethod_8(new ParameterizedThreadStart(<Module>.smethod_1));
+This is the antidebug protection, take a look at:
+C:\ConfuserEx-master\Confuser.Runtime\AntiDebug.Safe.cs
+
+So what we do?
+We first decrypt method body using ConfuserExMethodsDecryptor!
+We get ride of PE protection using ConfuserExFixer.
+We deobfuscate the assembly using de4dot.
+We nop almost all calls from module constructor
+EXCEPT constant protection call!
+
+When we run the program we get an OutOfMemoryException somewhere inside
+constant protection method!
+
+internal static void smethod_30()
+{
+    uint num = 0x30;
+    uint[] numArray = new uint[] { 
+        0x24b5823f, 0xe24c501f, 0x221a64c7, 0xaa565db7, 0xdcb5c15e, 0x5faa4a99, 0xedeff02f, 0xb4c60649, 0x301b00f8, 0x17e073b4, 0x4a14c2fe, 0x9a85e3aa, 0xcc0421a0, 0x84d25b96, 0x784d134, 0xf86368f9, 
+        0xd0dc9f59, 0x4bef1ebe, 0x1b537985, 0x41132bb0, 0xb07f6f36, 0x7c353e75, 0xcf5ce94c, 0x9b0a1e07, 0x46175c4b, 0x35de0d5e, 0x616ae0c9, 0x28ad1516, 0xff8b5f66, 0x322c8ccb, 0x7392bdee, 0x57f32fe5, 
+        0xbcce9496, 0x142dba75, 0x1dd635c6, 0xd7ccfda9, 0x4435110e, 0x58a02a49, 0xe9efe061, 0xb14e7645, 0xa813f13e, 0x13dca3e4, 0x7983033c, 0x968423fa, 0xcb7291a0, 0x9f46bb80, 0x87e0a2a4, 0xf443e909
+     };
+...
+byte_0 = smethod_29(buffer);
+
+In C:\ConfuserEx-master\Confuser.Runtime\Constant.cs
+		private static void Initialize() {
+			var l = (uint)Mutation.KeyI0;
+			uint[] q = Mutation.Placeholder(new uint[Mutation.KeyI0]);
+...
+			b = Lzma.Decompress(o);
+
+So all we have to do is getting right contents of byte_0
+and replace smethod_30 method to simply set that contents!
+We get right contents by simply calling constant protection method!
+ConfuserExConstant source attached!
+Game over!
+
