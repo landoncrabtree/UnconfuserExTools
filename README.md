@@ -40,11 +40,15 @@ A lot of the tools contained are part of CodeCracker's Tools. These tools are fr
 * ConfuserExDupPopPatcher.exe - (?)
 * ConfuserExExpressionKiller.exe - Fixes control flow (Doesn't work on newer versions)
 * ConfuserExFixer.exe - Fixes errors
-* ConfuserExMethodsDecryptor.exe - (?)
+* ConfuserExMethodsDecryptor.exe - Decrypts method body
 * ConfuseExSwitchKiller.exe - Fixes switch control flow
 * ConfuserCleanUp.exe - Cleans up file
 * ConfuserDelegateKiller.exe - (?)
 * ConfuserExPredicateKiller.exe - (?)
 * ConfuserLdcPopPatcher.exe - (?)
 * ConfuserStringDecryptor.exe - Older version of ConstantsDecryptor(?)
+* ConfuserExStringDecryptor2.exe - (?)
+* ConfuserExStringDecryptor_fr40.exe - (?)
 * ConfuserXorCalc.exe - Resolves XOR calculations(?)
+* ConfuserExConstant.exe - (?)
+* ConfuserExConstant2.exe - (?)
