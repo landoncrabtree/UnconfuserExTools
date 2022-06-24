@@ -14,17 +14,20 @@ This repository contains tools used in the unpacking and deobfuscation of .NET a
 1. ConfuserExMethodsDecryptor
 2. ConfuserExFixer
 3. ConfuserExConstant
---
+
+u4huth5
 
 1. Unconfuser.Exe
 2. ConfuserEx Proxy Call Fixer v2
 3. ConfuseExConstantsDecryptor
 4. ConfuseExSwitchKiller
 5. ConfuseExFixer
---
+
+u4huth5
 
 1. NoFuserEx.exe
---
+
+u4huth5
 
 
 This is the recommended order of tools, but other tools are available at your disposal. 
