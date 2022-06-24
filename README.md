@@ -9,6 +9,20 @@ A repository containing tools used for unpacking and deobfuscating .NET applicat
 This repository contains tools used in the unpacking and deobfuscation of .NET applications protected with ConfuserEx. I was analyzing a malware artifact protected by ConfuserEx, and most tutorials online referenced tools such as "UnconfuserEx" and "ConfuseExSwitchKiller", but links were dead / not readily available. I've created this repository to act as a centralized place for all tools related to the deobfuscation of ConfuserEx protected applications, without the worry of expiring or paywalled file downloads. Furthermore, a lot of tools, such as NoFuserEx, require you to build from source, so this repository has pre-compiled binaries for ease of use. 
 
 ## How to use?
+
+**WIP**
+1. ConfuserExMethodsDecryptor
+2. ConfuserExFixer
+3. ConfuserExConstant
+
+1. Unconfuser.Exe
+2. ConfuserEx Proxy Call Fixer v2
+3. ConfuseExConstantsDecryptor
+4. ConfuseExSwitchKiller
+5. ConfuseExFixer
+
+1. NoFuserEx.exe
+
 This is the recommended order of tools, but other tools are available at your disposal. 
 1. Download files via `git clone` or through the latest release.
 2. Run `UnconfuserEx.exe` - This unpacks the application.
