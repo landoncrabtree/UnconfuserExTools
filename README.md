@@ -22,6 +22,7 @@ This repository contains tools used in the unpacking and deobfuscation of .NET a
 ## Sources
 * https://youtu.be/X0F_-sE-6GU
 * https://github.com/CodeShark-Dev/NoFuserEx
+* https://www.youtube.com/watch?v=pgNr4YzgP9I
 
 ## Other possibly helpful tools
 Here are some other tools that might be helpful. They could also entirely replace the tools in this list. I need to test more with them.
