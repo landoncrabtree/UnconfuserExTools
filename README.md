@@ -31,7 +31,7 @@ Here are some other tools that might be helpful. They could also entirely replac
 ## Tools contained:
 A lot of the tools contained are part of CodeCracker's Tools. These tools are from 2011-2015, and are no longer maintained, nor is there much documentation about them. Once again, I want to reiterate that this repository is "as-is" and I cannot guarantee the safety or authenticity of the files provided. As such, without proper documentation on these files, I cannot say for sure what they do. All the information provided is from sources that are available today. 
 * UnconfuserEx - Unpacks ConfuserEx protected applications
-* NoFuserEx - Removes anti-tamper, anti-debugger, anti-dump, fixes proxy calls and constants
+* [NoFuserEx[(https://github.com/CodeShark-Dev/NoFuserEx) - Removes anti-tamper, anti-debugger, anti-dump, fixes proxy calls and constants (built from src)
 * ConfuserEx ProxyCallFixer v2 - Fixes proxy function calls
 * ConfuserExConstantDecryptor.exe - Fixes strings/constants
 * ConfuserExceptionsRestore.exe - Fixes any errors
